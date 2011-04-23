@@ -25,7 +25,7 @@
 		</ul>
 	</nav>
 </header>
-	
+<hr />
 <section role="main">
 	<article role="article">
 		<h1 class="entry-title">Markup Guide</h1>
@@ -84,30 +84,31 @@
 					<dd>Used for deleted or retracted text which still must remain on the page for some reason. Since the default style inc a strikethrough line, it's preferable to the <code>s</code> element. The <code>del</code> element also has a <code>datetime</code> attribute which allows you to include a timestamp directly in the element. Example deleted text and usage: She bought <del datetime="2011-04-22T19:00:00+03:00">two</del> <ins datetime="2011-04-22T19:00:00+03:00">five</ins> pairs of shoes.</dd>
 				<dt><em>em</em></dt>
 					<dd>Used for denoting emphasized text. In most instances where you'd want to italicize text (using the <abbr title="HyperText Markup Language">HTML</abbr> element <code>i</code> or otherwise) you should use the <code>em</code> element instead. Notable exceptions are stylistic italicizing of proper titles, foreign languages, etc. where italicizing is used for differentiation instead of emphasis. In those cases, no proper <abbr title="HyperText Markup Language">HTML</abbr> elements exist, so an <code>i</code> element or a <code>span</code> element with a custom class may be preferable. Example emphasized text and usage: You simply <em>must</em> try the negitoro maki!</dd>
-				<dt><i>i</i></dt>
-					<dd>PLACE TEXT HERE</dd>
 				<dt><ins datetime="2011-04-22T19:21:00+03:00">ins</ins></dt>
 					<dd>Used for inserted text and counterpart to the <code>del</code> element. Like <code>del</code>, <code>ins</code> has a <code>datetime</code> attribute which allows you to include a timestamp directly in the element. Example inserted text and usage: She bought <del datetime="2011-04-22T19:21:00+03:00">two</del> <ins datetime="2011-04-22T19:21:00+03:00">five</ins> pairs of shoes.</dd>
 				<dt><kbd>kbd</kbd></dt>
 					<dd>Used for text which should be typed by the user. Mainly useful for computer instructions. Example keyboard text and usage: Please press <kbd>Enter</kbd> to continue.</dd>
 				<dt><strong>strong</strong></dt>
 					<dd>Used for denoting stronger emphasis than the <code>em</code> element. In most instances where you'd want to bold text (using the <abbr title="HyperText Markup Language">HTML</abbr> element <code>b</code> or otherwise) you should use the <code>strong</code> element instead. Notable exceptions are stylistic bolding of examples, first occurences of names in an article, etc. where bolding is used for differentiation instead of emphasis. In those cases, no proper <abbr title="HyperText Markup Language">HTML</abbr> elements exist, so <code>b</code> element or a <code>span</code> element with a custom class may be preferable. Example strong text and usage: <strong>Don't</strong> stick nails in the electrical outlet.</dd>
-				<dt><b>b</b></dt>
-					<dd>PLACE TEXT HERE</dd>
 				<dt><var>var</var></dt>
 					<dd>Used for variables within computer code snippets. Useful for technology-oriented sites, not so useful otherwise. Example code and usage: Add 5 to <var>$result</var> and recalculate.</dd>
 				<dt><small>small</small></dt>
-					<dd>PLACE TEXT HERE</dd>
+					<dd>The <code>small</code> element represents side comments such as small print.</dd>
 				<dt><s>s</s></dt>
-					<dd>PLACE TEXT HERE</dd>
+					<dd>The <code>s</code> element represents contents that are no longer accurate or no longer relevant. When indicating document edits, use the <code>del</code> instead.</dd>
 				<dt><q>q</q></dt>
-					<dd>PLACE TEXT HERE</dd>
+					<dd><q cite="http://www.w3.org/wiki/HTML/Elements/q">The <code>q</code> element represents some phrasing content quoted from another source.</q> as stated on w3.org wiki.</dd>
 				<dt><dfn>dfn</dfn></dt>
-					<dd>PLACE TEXT HERE</dd>
+					<dd>The <dfn title="Hyper Text Markup Language">HTML</dfn> is the publishing language of the World Wide Web.</dd>
 				<dt><samp>samp</samp></dt>
-					<dd>PLACE TEXT HERE</dd>
+					<dd>The <code>samp</code> element represents output from a program or computing system. If you input a wrong value, it is displayed as <samp>error!!</samp></dd>
 				<dt><mark>mark</mark></dt>
-					<dd>PLACE TEXT HERE</dd>
+					<dd>The <code>mark</code> element represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.
+					<blockquote lang="en-GB">
+						<p>Look around and you will find, no-one's really <mark>colour</mark> blind.</p>
+					</blockquote>
+					<p lang="en-US">As we can tell from the <em>spelling</em> of the word, the person writing this quote is clearly not American.</p>
+				</dd>
 			</dl>
 
 			<hr />
@@ -133,26 +134,12 @@
 			<h2>Figure and figcaption</h2>
 			<p>The <code>figure</code> element represents some flow content.</p>
 			<figure>
-				<figcaption>The Super Sergios!</figcaption>
 				<img src="img/superfeios.jpg" alt="The Super Sergios!">
+				<figcaption>The Super Sergios!</figcaption>
 			</figure>
 			
 			<hr />
 			
-			<h2>Video</h2>
-			<video controls src="http://media.w3.org/2010/05/bunny/movie.ogv">
-				Your user agent does not support the HTML5 Video element.
-			</video>
-			
-			<hr />
-			
-			<h2>Audio</h2>
-			<audio controls src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga">
-				Your user agent does not support the HTML5 Audio element.
-			</audio>
-			
-			<hr />
-
 			<h2>Lists</h2>
 			<p>Then there are the lists. <code>ul</code> denotes an unordered list (ie. a list of loose items that don't require numbering, or a bulleted list). <code>ol</code> denotes an ordered list, and various numbering schemes are available through the CSS (including 1,2,3... a,b,c... i,ii,iii... and so on). Each item within the <code>ul</code> or <code>ol</code> requires a surrounding <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tag, to denote individual items within the list (as you may have guessed, <code>li</code> stands for list item).</p>
 			<p>Additionally, <code>dl</code> is another list type called a definition list. Instead of list items, the content of a <code>dl</code> consists of <code>dt</code> (Definition Term) and <code>dd</code> (Definition description) pairs. Though it may be called a "definition list", <code>dl</code> can apply to other scenarios where a parent/child relationship is applicable. For example, it may be used for marking up dialogues, with each <code>dt</code> naming a speaker, and each <code>dd</code> containing his or her words.</p>
@@ -183,7 +170,7 @@
 			<h2>Tables</h2>
 			<p>The following table has a caption. The first row and the first column contain table header cells only; other cells are data cells.</p>
 			<table>
-				<caption>Caption: Sample table: Areas of the Nordic countries, in sq km</caption>
+				<caption>Caption: Sample table: Areas of some countries, in sq km</caption>
 				<thead>
 					<tr>
 						<th>Country</th>
@@ -235,7 +222,7 @@
 						<input id="f1" name="text" size="20" value="Default text." />
 					</li>
 					<li>
-						<label for="f2">Multi-line text input field (textarea):</label>
+						<label for="f2">Multi-line text input field (textarea):</label><br />
 						<textarea id="f2" name="textarea" rows="16" cols="20">Default text.</textarea>
 					</li>
 					<li>
@@ -300,7 +287,6 @@
 					</li>
 				</ol>
 			</form>
-
 			<hr />
 		</div>
 	</article>

@@ -2,42 +2,109 @@
 
 /**
  ******************************************************************************************************************************************
- * CSS IMPORT
+ GENERAL DEFINITIONS
  *
- * @description: general reset by html5doctor.com
+ * @description:define the basic appearance of the markup (based on html5doctor.com Reset Stylesheet
  ******************************************************************************************************************************************
 **/
-@import url("reset.css");
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+body { line-height:1; }
+article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section { display:block; }
+
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+
+nav ul { list-style:none; }
+
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+table { border-collapse:collapse; border-spacing:0; }
+
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000;  font-style:italic; font-weight:bold; }
+del { text-decoration:line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ddd; margin:1em 0; padding:0; }
+input, select {  vertical-align:middle; }
 
 
 /**
  ******************************************************************************************************************************************
  GENERAL DEFINITIONS
  *
- * @description: define the basic appearance of the site
+ * @description:define the basic appearance of the site
  ******************************************************************************************************************************************
 **/
-body { background:#fff; color:#333; font:17px/1.8em GillSans, Calibri, Trebuchet, sans-serif; padding:50px 75px; }
+body { width:940px; margin:0 auto; font:16px GillSans, Calibri, Trebuchet, sans-serif; background:#fff; color:#333; line-height:1.5em; padding-top:72px; }
 
+/** HEADINGS (magic number) ÷ (font size) = (line height)
+ *****************************************************************************************************************************************/
+h1, h2, h3, h4, h5, h6 { margin-bottom:24px; font-weight:bold; }
+h1 { font-size:1.5em; line-height:1em; }
+h2 { font-size:1.375em; line-height:1.0909em; }
+h3 { font-size:1.25em; line-height:1.2em; }
+h4 { font-size:1.125em; line-height:1.333em; }
+h5 { font-size:1em; line-height:1.5em; }
+h6 { font-size:1em; line-height:1.5em; }
 
-/**
- ******************************************************************************************************************************************
- TAGS
- *
- * @description: define the appearance of all elements
- ******************************************************************************************************************************************
-**/
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
+/** PARAGRAPHS
+ *****************************************************************************************************************************************/
+p { margin-bottom:24px; }
 
+/** LISTS
+ *****************************************************************************************************************************************/
+ul, ol { margin:0 0 24px 2em; }
+ul { list-style:square outside; }
+ol { list-style-type: decimal; }
+ul ul,
+ol ol { margin:0 0 0 60px; }
+dl { margin-bottom:24px; }
+dt { padding:5px; background:#f0f0f0; }
+dd { padding:5px 5px 10px 60px; }
 
-a, 
+/* Remove margins for navigation lists */
+nav ul, nav li { margin:0; list-style:none; list-style-image:none; }
+
+/** BLOCKQUOTES and QUOTES
+ *****************************************************************************************************************************************/
+blockquote { background:#f9f9f9; border-left:5px solid #ddd; margin:0 45px 24px 40px; padding:15px; quotes:"\201C""\201D""\2018""\2019"; }
+blockquote:before { color:#ccc; content:open-quote; font-size:4em; line-height:.1em; margin-right:.25em; vertical-align:-.4em; }
+blockquote p { display:inline; }
+q {}
+
+/** TABLES
+ *****************************************************************************************************************************************/
+table { width:90%; border-top:1px solid #e5eff8; border-right:1px solid #e5eff8; margin:1em auto; border-collapse:collapse; }
+caption { color: #9ba9b4; font-size:.94em; letter-spacing:.1em; margin:1em 0 0 0; padding:0; caption-side:top; text-align:center; }
+td { color:#678197; border-bottom:1px solid #e5eff8; border-left:1px solid #e5eff8; padding:.3em 1em; text-align:center; }
+th { font-weight:normal; color:#678197; text-align:left; border-bottom:1px solid #e5eff8; border-left:1px solid #e5eff8; padding:.3em 1em; }
+thead th { background:#f4f9fe; text-align:center; font:bold 1.2em/2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif; color:#66a3d3 }
+tfoot td { text-align:left; background:#f4f9fe; }
+
+/** FORMS
+ *****************************************************************************************************************************************/
+ 
+/** LINKS
+ *****************************************************************************************************************************************/
+a { color:#069; text-decoration:none; border-bottom:1px solid #a9a9a0; }
+a:hover { color:#d93c2c; text-decoration:none; border-bottom:none; }
 a:active, 
-a:visited { color: #069; text-decoration:none; border-bottom:1px solid #a9a9a0; }
-a:hover { color:#d93c2c; border-bottom:none; }
+a:focus { color:#069; text-decoration:none; border-bottom:1px solid #a9a9a0; }
+
+/** INLINE ELEMENTS
+ *****************************************************************************************************************************************/
+sub, sup { font-size:75%; line-height:0; position:relative; }
+sup { top:-0.5em; }
+sub { bottom:-0.25em; }
+
+/** MISCELLANEOUS
+ *****************************************************************************************************************************************/
+figure { margin:1.5em 0 2em; }
+figure img { display:block; margin:0 auto 0.75em; border:1px solid #ddd; padding:6px; background:#fff; }
+figcaption { margin:.75em 0; text-align:center; font:italic 13px/18px Cambria, Georgia, "Times New Roman", Times, serif; }
+
 del, s { color:#a9a9a0; }
 em { border-bottom:1px dotted #ddd; }
