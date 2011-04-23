@@ -5,6 +5,8 @@
 	
 	<title>HTML5 Markup Guide</title>
 	<link rel="stylesheet" media="screen" href="css/style.css" />
+	<!-- mint statistics   |   REMOVE THIS --> 
+	<script src="../mint/?js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -28,7 +30,7 @@
 	<article role="article">
 		<h1 class="entry-title">Markup Guide</h1>
 		<div class="entry-content">
-			<p>Within this document, references will be made to <em>elements</em> and <em>attributes</em>. It's important to understand the difference, so consider this sample code:</p>
+			<p>Within this document, references will be made to <em>elements</em> and <em>attributes</em>. It's important to understand the difference, <wbr>so consider this sample code:</p>
 			<p><code>&lt;a href="index.php"&gt;Home&lt;/a&gt;</code></p>
 			<p>The base <abbr title="HyperText Markup Language">HTML</abbr> element is the <code>a</code> in this case. The attribute is any additional information about that element within the initial &lt; &gt; pair, or the <code>href</code> value in this case.</p>
 			<p>To view the example usage for any item within this document, please view its source.</p>
@@ -71,9 +73,9 @@
 				<dt><code>code</code></dt>
 					<dd>
 						<p>Used for computer code samples. Useful for technology-oriented sites, not so useful otherwise. Example code and usage:</p>
-			<pre><code>function getJello() {
-				echo $aDeliciousSnack;
-			}</code></pre>
+<pre><code>function getJello() {
+	echo $aDeliciousSnack;
+}</code></pre>
 						<p>Inline usage: just like elsewhere in this document, <abbr title="HyperText Markup Language">HTML</abbr> elements like <code>em</code> or <code>code</code> can be considered code, and marked up as such.</p>
 					</dd>
 				<dt><cite>cite</cite></dt>
@@ -82,14 +84,30 @@
 					<dd>Used for deleted or retracted text which still must remain on the page for some reason. Since the default style inc a strikethrough line, it's preferable to the <code>s</code> element. The <code>del</code> element also has a <code>datetime</code> attribute which allows you to include a timestamp directly in the element. Example deleted text and usage: She bought <del datetime="2011-04-22T19:00:00+03:00">two</del> <ins datetime="2011-04-22T19:00:00+03:00">five</ins> pairs of shoes.</dd>
 				<dt><em>em</em></dt>
 					<dd>Used for denoting emphasized text. In most instances where you'd want to italicize text (using the <abbr title="HyperText Markup Language">HTML</abbr> element <code>i</code> or otherwise) you should use the <code>em</code> element instead. Notable exceptions are stylistic italicizing of proper titles, foreign languages, etc. where italicizing is used for differentiation instead of emphasis. In those cases, no proper <abbr title="HyperText Markup Language">HTML</abbr> elements exist, so an <code>i</code> element or a <code>span</code> element with a custom class may be preferable. Example emphasized text and usage: You simply <em>must</em> try the negitoro maki!</dd>
+				<dt><i>i</i></dt>
+					<dd>PLACE TEXT HERE</dd>
 				<dt><ins datetime="2011-04-22T19:21:00+03:00">ins</ins></dt>
 					<dd>Used for inserted text and counterpart to the <code>del</code> element. Like <code>del</code>, <code>ins</code> has a <code>datetime</code> attribute which allows you to include a timestamp directly in the element. Example inserted text and usage: She bought <del datetime="2011-04-22T19:21:00+03:00">two</del> <ins datetime="2011-04-22T19:21:00+03:00">five</ins> pairs of shoes.</dd>
 				<dt><kbd>kbd</kbd></dt>
 					<dd>Used for text which should be typed by the user. Mainly useful for computer instructions. Example keyboard text and usage: Please press <kbd>Enter</kbd> to continue.</dd>
 				<dt><strong>strong</strong></dt>
 					<dd>Used for denoting stronger emphasis than the <code>em</code> element. In most instances where you'd want to bold text (using the <abbr title="HyperText Markup Language">HTML</abbr> element <code>b</code> or otherwise) you should use the <code>strong</code> element instead. Notable exceptions are stylistic bolding of examples, first occurences of names in an article, etc. where bolding is used for differentiation instead of emphasis. In those cases, no proper <abbr title="HyperText Markup Language">HTML</abbr> elements exist, so <code>b</code> element or a <code>span</code> element with a custom class may be preferable. Example strong text and usage: <strong>Don't</strong> stick nails in the electrical outlet.</dd>
+				<dt><b>b</b></dt>
+					<dd>PLACE TEXT HERE</dd>
 				<dt><var>var</var></dt>
 					<dd>Used for variables within computer code snippets. Useful for technology-oriented sites, not so useful otherwise. Example code and usage: Add 5 to <var>$result</var> and recalculate.</dd>
+				<dt><small>small</small></dt>
+					<dd>PLACE TEXT HERE</dd>
+				<dt><s>s</s></dt>
+					<dd>PLACE TEXT HERE</dd>
+				<dt><q>q</q></dt>
+					<dd>PLACE TEXT HERE</dd>
+				<dt><dfn>dfn</dfn></dt>
+					<dd>PLACE TEXT HERE</dd>
+				<dt><samp>samp</samp></dt>
+					<dd>PLACE TEXT HERE</dd>
+				<dt><mark>mark</mark></dt>
+					<dd>PLACE TEXT HERE</dd>
 			</dl>
 
 			<hr />
@@ -97,6 +115,42 @@
 			<h2>Subscripts and Superscripts</h2>
 			<p>In order to test how subscripts and superscripts (<code>sub</code> and <code>sup</code> markup) work inside running text, we need some dummy text around constructs like x<sub>1</sub> and H<sub>2</sub>O (where subscripts occur). So here is some fill so that you will (hopefully) see whether and how badly the subscripts and superscripts mess up vertical spacing between lines. Now superscripts: M<sup>lle</sup>, 1<sup>st</sup>, and then some mathematical notations: e<sup>x</sup>, sin<sup>2</sup> <i>x</i>, and some nested superscripts (exponents) too: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 
+			<hr />
+			
+			<h2>Address</h2>
+			<address>
+				John Doe LLC<br />
+				111 Example Avenue<br />
+				13341 Ano Liosia<br />
+				Athens, Greece<br />
+				Phone: +39 210 123 4567<br />
+				web : <a href="http://www.singeridis.com/markup">www.singeridis.com/markup/</a><br />
+				email : <a href="mailto:me@example.com">me@example.com</a>
+			</address>
+			
+			<hr />
+			
+			<h2>Figure and figcaption</h2>
+			<p>The <code>figure</code> element represents some flow content.</p>
+			<figure>
+				<figcaption>The Super Sergios!</figcaption>
+				<img src="img/superfeios.jpg" alt="The Super Sergios!">
+			</figure>
+			
+			<hr />
+			
+			<h2>Video</h2>
+			<video controls src="http://media.w3.org/2010/05/bunny/movie.ogv">
+				Your user agent does not support the HTML5 Video element.
+			</video>
+			
+			<hr />
+			
+			<h2>Audio</h2>
+			<audio controls src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga">
+				Your user agent does not support the HTML5 Audio element.
+			</audio>
+			
 			<hr />
 
 			<h2>Lists</h2>
@@ -130,16 +184,25 @@
 			<p>The following table has a caption. The first row and the first column contain table header cells only; other cells are data cells.</p>
 			<table>
 				<caption>Caption: Sample table: Areas of the Nordic countries, in sq km</caption>
-				<tr>
-					<th>Country</th>
-					<th>Total area</th>
-					<th>Land area</th>
-				</tr>
-				<tr>
-					<th>Greece</th>
-					<td>131,990</td>
-					<td>130,800</td>
-				</tr>
+				<thead>
+					<tr>
+						<th>Country</th>
+						<th>Total area</th>
+						<th>Land area</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td colspan="3">Copyright...</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<th>Greece</th>
+						<td>131,990</td>
+						<td>130,800</td>
+					</tr>
+				</tbody>
 				<tr>
 					<th>Finland</th>
 					<td>337,030</td>
@@ -213,8 +276,27 @@
 						</select>
 					</li>
 					<li>
-						<input id="f99" type="submit" name="submit" value="Submit" />
-						<input id="f0" type="reset" name="reset" value="Reset" />
+						<select name="c">
+							<optgroup label="8.01 Physics I: Classical Mechanics">
+								<option value="8.01.1">Lecture 01: Powers of Ten</option>
+								<option value="8.01.2">Lecture 02: 1D Kinematics</option>
+								<option value="8.01.3">Lecture 03: Vectors</option>
+							</optgroup>
+							<optgroup label="8.02 Electricity and Magnestism">
+								<option value="8.02.1">Lecture 01: What holds our world together?</option>
+								<option value="8.02.2">Lecture 02: Electric Field</option>
+								<option value="8.02.3">Lecture 03: Electric Flux</option>
+							</optgroup>
+							<optgroup label="8.03 Physics III: Vibrations and Waves">
+								<option value="8.03.1">Lecture 01: Periodic Phenomenon</option>
+								<option value="8.03.2">Lecture 02: Beats</option>
+								<option value="8.03.3">Lecture 03: Forced Oscillations with Damping</option>
+							</optgroup>
+						</select>
+					</li>
+					<li>
+						<button type="submit" value="submit">submit</button>
+						<button type="reset" value="reset">reset</button>
 					</li>
 				</ol>
 			</form>
