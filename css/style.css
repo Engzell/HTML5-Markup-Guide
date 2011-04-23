@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/**
+ ******************************************************************************************************************************************
+ * CSS IMPORT
+ *
+ * @description: general reset by html5doctor.com
+ ******************************************************************************************************************************************
+**/
+@import url("reset.css");
+
+
+/**
+ ******************************************************************************************************************************************
+ GENERAL DEFINITIONS
+ *
+ * @description: define the basic appearance of the site
+ ******************************************************************************************************************************************
+**/
+body { background:#fff; color:#333; font:17px/1.8em GillSans, Calibri, Trebuchet, sans-serif; padding:50px 75px; }
+a, 
+a:active, 
+a:visited { color: #069; text-decoration:none; border-bottom:1px solid #a9a9a0; }
+a:hover { color:#d93c2c; border-bottom:none; }
+del, s { color:#a9a9a0; }
+em { border-bottom:1px dotted #ddd; }
