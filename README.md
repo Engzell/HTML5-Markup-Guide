@@ -1,4 +1,4 @@
-#  HTML5 Markup Guide [http://singeridis.com/markup/](http://singeridis.com/markup/)
+#  HTML5 Markup Guide
 
 ## Changelog:
 
@@ -8,12 +8,11 @@
 
 * [Original code by Dave Shea](http://mezzoblue.com/downloads/markupguide/markupguide.html) : Attribution-ShareAlike 2.0
 * HTML5Doctor CSS reset : Public Domain
-* The "Super Sergios" image created by [Antonis Theodorakis](http://antonistheodorakis.com/) for [Sergios Singeridis](http://singeridis.com) : Usage allowed only with written permisson from Sergios Singeridis
 
 ## Summary:
 
 This is a set of files for testing how each element is styled.
 
 ---
-[Created by Dave Shea](http://mezzoblue.com/downloads/markupguide/markupguide.html), adapted by [Sergios Singeridis](http://www.singeridis.com/)
+[Created by Dave Shea](http://mezzoblue.com/downloads/markupguide/markupguide.html)
 This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/)
